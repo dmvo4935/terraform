@@ -45,7 +45,7 @@ resource "azurerm_virtual_machine" "mgm_node" {
         
         ssh_user = "${var.adm_user}"
 #        ssh_ip = "${azurerm_network_interface.myterraformnic.private_ip_address}"
-        ssh_ip = "${azurerm_public_ip.myterraformpublicip.ip_address}"
+#        ssh_ip = "${azurerm_public_ip.myterraformpublicip.ip_address}"
         role = "myrole"
 
     }
